@@ -25,6 +25,9 @@ module CarrierWave
       when :mp4
         { video_codec: 'libx264',   
           audio_codec: 'libfaac' }
+      when :m4a
+        { video_codec: 'libx264',
+          audio_codec: 'libfdk_aac' }
       when :webm
         { video_codec: 'libvpx',    
           audio_codec: 'libvorbis' }
