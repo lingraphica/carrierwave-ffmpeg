@@ -27,7 +27,7 @@ module CarrierWave
           audio_codec: 'libfaac' }
       when :m4a
         { video_codec: 'libx264',
-          audio_codec: 'libfdk_aac' }
+          audio_codec: 'libvo_aacenc' }
       when :webm
         { video_codec: 'libvpx',    
           audio_codec: 'libvorbis' }
