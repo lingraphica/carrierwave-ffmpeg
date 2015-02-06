@@ -29,10 +29,13 @@ module CarrierWave
         { video_codec: 'libx264',
           audio_codec: 'libvo_aacenc' }
       when :webm
-        { video_codec: 'libvpx',    
+        { video_codec: 'libvpx',
           audio_codec: 'libvorbis' }
       when :ogv
-        { video_codec: 'libtheora', 
+        { video_codec: 'libtheora',
+          audio_codec: 'libvorbis' }
+      when :ogg
+        { video_codec: 'libtheora',
           audio_codec: 'libvorbis' }
       else
         raise CarrierWave::ProcessingError.new("Unsupported video format. Error: #{e}")
